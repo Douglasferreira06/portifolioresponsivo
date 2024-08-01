@@ -225,8 +225,10 @@ h3 {
     }
 
     .geral {
+
+       
         width: 90%;
-        height: auto;
+        height: 70%;
     }
 
     .div1 {
@@ -238,12 +240,19 @@ h3 {
         margin-top: 1em;
         margin-right: 0;
         text-align: center;
+        position: relative;
+       bottom: -40px;
     }
 
     .image {
         left: 50%;
         transform: translateX(-50%);
         bottom: 1em;
+    }
+
+    .image2{
+        
+        
     }
 }
 
