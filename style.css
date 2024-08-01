@@ -5,7 +5,7 @@
 }
 
 body {
-    max-width: 800px;
+    max-width: 100%;
     font-family: "Sora", sans-serif;
     font-optical-sizing: auto;
     background-image: url("./abstract-polygon-geometry-animated-background-free-video.jpg");
@@ -13,6 +13,7 @@ body {
     background-repeat: no-repeat;
     margin: 0 auto; /* Centraliza o conteúdo do body */
     animation: alterna 3s infinite;
+    padding: 1em;
 }
 
 @keyframes alterna {
@@ -28,7 +29,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px auto; /* Centraliza o header */
+    margin: 1em auto; /* Centraliza o header */
     background-color: beige;
     width: 80%; /* Largura do header */
     height: 80px;
@@ -39,14 +40,14 @@ header {
 
 .image {
     position: absolute; /* Corrigido para absolute para posicionamento relativo ao header */
-    left: 80px;
-    bottom: 25px;
+    left: 2em;
+    bottom: 1.5em;
 }
 
 ul {
     display: flex;
     justify-content: center; /* Centraliza a lista */
-    gap: 25px; /* Espaço entre os itens da lista */
+    gap: 1.5em; /* Espaço entre os itens da lista */
     list-style: none;
 }
 
@@ -61,7 +62,8 @@ h3 {
 
 .geral {
     position: relative;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     height: 340px;
     background-image: url("./fundo-escuro-de-parede-zdnfze1amg2r36vi.jpg");
     margin: auto;
@@ -83,10 +85,11 @@ h3 {
 
 .div1 {
     position: relative;
-    top: 100px;
-    margin: 10px;
+    top: 2em;
+    margin: 1em;
     background-color: darkslategrey;
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     height: 200px;
     border-radius: 10px;
     color: aliceblue;
@@ -107,7 +110,7 @@ h3 {
 }
 
 .p01 {
-    margin: 10px;
+    margin: 1em;
     text-align: justify;
 }
 
@@ -123,8 +126,8 @@ h3 {
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 40px;
-    right: 40px;
+    bottom: 2.5em;
+    right: 2.5em;
     background-color: #25d366;
     color: #fff;
     border-radius: 50px;
@@ -139,27 +142,21 @@ h3 {
 }
 
 .perfil {
-    
     float: right;
-    margin-top: -100px;
-    margin-right: 50px;
-   
+    margin-top: -6.25em;
+    margin-right: 3.125em;
 }
 
 .image2{
     border-radius: 50%;
     animation:flutua 1.5s infinite ease-in-out;
-    
 }
-@keyframes flutua{
 
+@keyframes flutua{
     50%{
         transform: translateY(-10%);
     }
-
-   
 }
-
 
 .t1 {
     animation: icon 2s infinite;
@@ -171,7 +168,7 @@ h3 {
         box-shadow: 0 0 0 0 rgb(51, 51, 101);
     }
     50% {
-        box-shadow: 0 0 20px 10px rgb(36, 36, 106)
+        box-shadow: 0 0 20px 10px rgb(36, 36, 106);
     }
     100% {
         box-shadow: 0 0 0 0 rgb(0, 0, 24);
@@ -210,7 +207,54 @@ h3 {
     }
 }
 
-
-.animated2{
+.animated2 {
     animation: slid  1s ease-out;
+}
+
+/* Media Queries para Responsividade */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 1em;
+    }
+
+    .geral {
+        width: 90%;
+        height: auto;
+    }
+
+    .div1 {
+        width: 100%;
+    }
+
+    .perfil {
+        float: none;
+        margin-top: 1em;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .image {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-link {
+        width: 50px;
+        height: 50px;
+        bottom: 1.5em;
+        right: 1.5em;
+        font-size: 25px;
+    }
+
+    .image {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0.5em;
+    }
 }
