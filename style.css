@@ -47,7 +47,7 @@ header {
 ul {
     display: flex;
     justify-content: center; /* Centraliza a lista */
-    gap: 1.5em; /* Espaço entre os itens da lista */
+    gap:100px; /* Espaço entre os itens da lista */
     list-style: none;
 }
 
