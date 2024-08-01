@@ -213,7 +213,11 @@ h3 {
 
 /* Media Queries para Responsividade */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+
+    body{ height: 100vh;
+        background-image: url("./abstract-polygon-geometry-animated-background-free-video.jpg");
+    }
     header {
         flex-direction: column;
         height: auto;
