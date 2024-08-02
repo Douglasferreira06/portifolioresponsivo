@@ -89,7 +89,7 @@ h3 {
     margin: 1em;
     background-color: darkslategrey;
     width: 90%;
-    max-width: 400px;
+    max-width: 300px;
     height: 200px;
     border-radius: 10px;
     color: aliceblue;
@@ -233,8 +233,12 @@ h3 {
 
     .div1 {
         width: 100%;
+        
     }
 
+    .p01 {
+        font-size: 14px;
+    }
     .perfil {
         float: none;
         margin-top: 1em;
@@ -251,9 +255,8 @@ h3 {
     }
 
     .image2{
-        
-        
-    }
+    
+}
 }
 
 @media (max-width: 480px) {
@@ -270,4 +273,48 @@ h3 {
         transform: translateX(-50%);
         bottom: 0.5em;
     }
+
+    .t1{
+        position: relative;
+        bottom: 50px;
+        left: -60px;
+    }
 }
+footer {
+   
+   height: 20px;
+   width: 50%;
+    background-color: #f1f1f1;
+    text-align: center;
+ position: fixed;
+
+    bottom: 0;
+
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+footer p {
+    
+text-align: center;
+    color: #333;
+    font-size: 0.9em;
+}
+
+
+
+    footer:hover {
+        transform: scale(1.05);
+
+        background-color: #888;
+    }
+
+    @media (max-width: 500px) {
+   footer{
+
+    font-size: 14px;
+    width: 380px;
+    
+   }
+
+    }
