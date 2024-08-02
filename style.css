@@ -89,7 +89,7 @@ h3 {
     margin: 1em;
     background-color: darkslategrey;
     width: 90%;
-    max-width: 300px;
+    max-width:300px;
     height: 200px;
     border-radius: 10px;
     color: aliceblue;
@@ -112,6 +112,7 @@ h3 {
 .p01 {
     margin: 1em;
     text-align: justify;
+    font-size: 14px;
 }
 
 .div2 {
@@ -254,9 +255,6 @@ h3 {
         bottom: 1em;
     }
 
-    .image2{
-    
-}
 }
 
 @media (max-width: 480px) {
@@ -318,3 +316,4 @@ text-align: center;
    }
 
     }
+  
