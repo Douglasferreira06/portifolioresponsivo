@@ -274,8 +274,8 @@ h3 {
 
     .t1{
         position: relative;
-        bottom: 50px;
-        left: -60px;
+        left: -50px;
+        margin-bottom: 60px;
     }
 }
 footer {
